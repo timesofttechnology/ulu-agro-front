@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/7e3a1b0938.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="soul">
+      <span
+        style="font-size: 30px; cursor: pointer; color: #fff"
+        class="openbtn"
+        onclick="openNav()"
+        ><img src="./image/col/openButton.svg" alt="" style="width: 35px"
+      /></span>
+
+      <div id="mySidenav" class="secondSidenav">
+        <div class="close">
+          <a href="./just.html" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <select id="cars">
+            <option value="Az">Az</option>
+            <option value="Eng">Eng</option>
+          </select>
+        </div>
+
+        <div class="ham-lists">
+          <a href="./just.html" class="activation">
+            <img src="./image/dashboard-icons/Home.svg" alt="" />
+            Ana Səhifə
+          </a>
+          <a href="./second.html" class="activation">
+            <img src="./image/dashboard-icons/info.svg" alt="" />
+            Haqqımızda</a
+          >
+          <a href="./indicators.html" class="activation">
+            <img src="./image/dashboard-icons/histogram.svg" alt="" />
+            Göstəricilər</a
+          >
+          <a href="./activities.html" class="activation">
+            <img src="./image/dashboard-icons/tractor .svg" alt="" />
+            Fəaliyyətlərimiz</a
+          >
+          <a href="#" class="activation active">
+            <img src="./image/dashboard-icons/map-marker.svg" alt="" />
+            Əlaqə</a
+          >
+        </div>
+
+        <div class="sidenav-down ham-lists">
+          <div class="side-icon-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Telefon:</p>
+              <p>050 511 55 15</p>
+            </div>
+          </div>
+
+          <div class="side-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p>Mail:</p>
+              <p>info@uluargo.az</p>
+            </div>
+          </div>
+
+          <div class="side-line-box">
+            <p>Site by TimeSoft</p>
+            <div class="border-long-footer"></div>
+            <p>© 2020 Uluagro All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-main">
+        <nav>
+          <div class="left-container">
+            <img src="./image/color-Frame.svg" alt="" />
+          </div>
+        </nav>
+
+        <div class="container-grid height" id="container">
+          <div class="about">
+            <h1>Bizimlə ƏLAQƏ</h1>
+            <div class="down-border">
+              <div></div>
+            </div>
+          </div>
+          <div class="greenBoxes">
+            <button type="button" class="greenBox greenActive">
+              <a href="#">Əlaqə məlumatları</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./writeUs.html">Bizə yaz</a>
+            </button>
+          </div>
+
+          <div class="double-colon">
+            <div class="adress">
+              <p>
+                <b>Address</b> <br />
+                Gakh, Azerbaijan
+              </p>
+
+              <p>
+                <b>Phone</b> <br />
+                +994 50 0000000
+              </p>
+
+              <p>
+                <b>Email</b> <br />
+                info@uluagro.az
+              </p>
+            </div>
+
+            <div class="adressImage">
+              <img src="./image/col/GoogleMap.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        const full = document.querySelector(".secondSidenav");
+        const list = document.querySelector(".ham-lists");
+        const closeBtn = document.querySelector(".closebtn");
+
+        full.style.width = "250px";
+        full.style.left = "0%";
+        full.style.opacity = "100%";
+
+        if (window.innerWidth < 768) {
+          closeBtn.setAttribute("href", "javascript:void(0)");
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>

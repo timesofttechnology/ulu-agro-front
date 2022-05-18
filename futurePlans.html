@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7e3a1b0938.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="soul">
+      <span
+        style="font-size: 30px; cursor: pointer; color: #fff"
+        class="openbtn"
+        onclick="openNav()"
+        ><img src="./image/col/openButton.svg" alt="" style="width: 35px"
+      /></span>
+
+      <div id="mySidenav" class="secondSidenav">
+        <div class="close">
+          <a href="./just.html" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <select id="cars">
+            <option value="Az">Az</option>
+            <option value="Eng">Eng</option>
+          </select>
+        </div>
+
+        <div class="ham-lists">
+          <a href="./just.html" class="activation">
+            <img src="./image/dashboard-icons/Home.svg" alt="" />
+            Ana Səhifə
+          </a>
+          <a href="./second.html" class="activation">
+            <img src="./image/dashboard-icons/info.svg" alt="" />
+            Haqqımızda</a
+          >
+          <a href="./indicators.html" class="activation">
+            <img src="./image/dashboard-icons/histogram.svg" alt="" />
+            Göstəricilər</a
+          >
+          <a href="#" class="activation active">
+            <img src="./image/dashboard-icons/tractor .svg" alt="" />
+            Fəaliyyətlərimiz</a
+          >
+          <a href="./contact.html" class="activation">
+            <img src="./image/dashboard-icons/map-marker.svg" alt="" />
+            Əlaqə</a
+          >
+        </div>
+
+        <div class="sidenav-down ham-lists">
+          <div class="side-icon-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Telefon:</p>
+              <p>050 511 55 15</p>
+            </div>
+          </div>
+
+          <div class="side-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p>Mail:</p>
+              <p>info@uluargo.az</p>
+            </div>
+          </div>
+
+          <div class="side-line-box">
+            <p>Site by TimeSoft</p>
+            <div class="border-long-footer"></div>
+            <p>© 2020 Uluagro All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-main">
+        <nav>
+          <div class="left-container">
+            <img src="./image/color-Frame.svg" alt="" />
+          </div>
+        </nav>
+
+        <div class="container-grid" id="container">
+          <div class="about">
+            <h1>Fəaliyyətlərimiz</h1>
+            <div class="down-border">
+              <div></div>
+            </div>
+          </div>
+          <div class="greenBoxes">
+            <button type="button" class="greenBox">
+              <a href="./activities.html">Control Center</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./ecoTourismGarden.html">Eco Tourism garden</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./logisticPark.html">Logistic Park</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./materialTechnical.html">Material Technical</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./agriculture.html">Innovation in argiculture </a>
+            </button>
+
+            <div class="btnBorder">
+              <button type="button" class="greenBox">
+                <a href="./diversfication.html">Diversfication</a>
+              </button>
+
+              <button type="button" class="greenBox greenActive">
+                <a href="#">Future Plans</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="double-colon double-colon-ecoPrevious">
+            <div class="sca">
+              <div class="dynamic-img">
+                <img
+                  src="./image/col/pexels-tim-mossholder-974314.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="colon-text">
+              <h2>FUTURE PLANS</h2>
+              <p>
+                Our company has a road map to establish a strong agricultural
+                center in the region, and we intend to implement several future
+                plans to fulfill this task. Thus, we are currently working on a
+                phased cold storage project with a total capacity of 6,000 tons
+                for various products and fruits in the agro-park. In addition,
+                research is being conducted in direction to import almond
+                processing line for second and third generation finished
+                products and fruit drying equipment. Increasing the size of
+                orchards is also part of our future plans. Based on the high
+                productivity and quality we have achieved, the expansion of
+                vineyards and almond orchards is considered a priority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        const full = document.querySelector(".secondSidenav");
+        const list = document.querySelector(".ham-lists");
+        const closeBtn = document.querySelector(".closebtn");
+
+        full.style.width = "250px";
+        full.style.left = "0%";
+        full.style.opacity = "100%";
+
+        if (window.innerWidth < 768) {
+          closeBtn.setAttribute("href", "javascript:void(0)");
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>

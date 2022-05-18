@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/7e3a1b0938.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="soul">
+      <span
+        style="font-size: 30px; cursor: pointer; color: #fff"
+        class="openbtn"
+        onclick="openNav()"
+        ><img src="./image/col/openButton.svg" alt="" style="width: 35px"
+      /></span>
+
+      <div id="mySidenav" class="secondSidenav">
+        <div class="close">
+          <a href="./just.html" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <select id="cars">
+            <option value="Az">Az</option>
+            <option value="Eng">Eng</option>
+          </select>
+        </div>
+
+        <div class="ham-lists">
+          <a href="./just.html" class="activation">
+            <img src="./image/dashboard-icons/Home.svg" alt="" />
+            Ana Səhifə
+          </a>
+          <a href="./second.html" class="activation">
+            <img src="./image/dashboard-icons/info.svg" alt="" />
+            Haqqımızda</a
+          >
+          <a href="./indicators.html" class="activation">
+            <img src="./image/dashboard-icons/histogram.svg" alt="" />
+            Göstəricilər</a
+          >
+          <a href="#" class="activation active">
+            <img src="./image/dashboard-icons/tractor .svg" alt="" />
+            Fəaliyyətlərimiz</a
+          >
+          <a href="./contact.html" class="activation">
+            <img src="./image/dashboard-icons/map-marker.svg" alt="" />
+            Əlaqə</a
+          >
+        </div>
+
+        <div class="sidenav-down ham-lists">
+          <div class="side-icon-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Telefon:</p>
+              <p>050 511 55 15</p>
+            </div>
+          </div>
+
+          <div class="side-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p>Mail:</p>
+              <p>info@uluargo.az</p>
+            </div>
+          </div>
+
+          <div class="side-line-box">
+            <p>Site by TimeSoft</p>
+            <div class="border-long-footer"></div>
+            <p>© 2020 Uluagro All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-main">
+        <nav>
+          <div class="left-container">
+            <img src="./image/color-Frame.svg" alt="" />
+          </div>
+        </nav>
+
+        <div class="container-grid" id="container">
+          <div class="about">
+            <h1>Fəaliyyətlərimiz</h1>
+            <div class="down-border">
+              <div></div>
+            </div>
+          </div>
+          <div class="greenBoxes">
+            <button type="button" class="greenBox">
+              <a href="./activities.html">Control Center</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./ecoTourismGarden.html">Eco Tourism garden</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./logisticPark.html">Logistic Park</a>
+            </button>
+
+            <button type="button" class="greenBox">
+              <a href="./materialTechnical.html">Material Technical</a>
+            </button>
+
+            <button type="button" class="greenBox greenActive">
+              <a href="#">Innovation in argiculture </a>
+            </button>
+
+            <div class="btnBorder">
+              <button type="button" class="greenBox">
+                <a href="./diversfication.html">Diversfication</a>
+              </button>
+
+              <button type="button" class="greenBox">
+                <a href="./futurePlans.html">Future Plans</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="double-colon">
+            <div class="colon-text">
+              <h2 style="font-size: 35px">INNOVATION IN AGRICULTURE</h2>
+              <div class="scrollBar">
+                <p>
+                  Despite its difficult appearance, the agricultural sector is a
+                  place where great innovations occur every year. And it should
+                  be noted we are part of that process. Together with our
+                  partners at Timesoft LLC, we have developed a unique and
+                  modern intelligent management system specifically designed for
+                  agro-parks and growing enterprises. The main functions of the
+                  system are: <br />
+                  <br />
+                  • Fully personalized profiles and access points depending on
+                  the responsibilities of employees; <br /><br />
+                  • Take preventive measures based on data from satellite and
+                  Davis devices installed in the area; <br /><br />
+                  • Ability to put together operations, management decisions,
+                  mapping, structures, labeling and welding costs; <br /><br />
+                  • Availability of complete information for plants and land
+                  plots, including timelines and treatments; <br /><br />
+                  • Special planning to manage and organize all management and
+                  operational activities within the organization; <br /><br />
+                  • Monitoring the operation of equipment,facilities, machinery
+                  and security systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        const full = document.querySelector(".secondSidenav");
+        const list = document.querySelector(".ham-lists");
+        const closeBtn = document.querySelector(".closebtn");
+
+        full.style.width = "250px";
+        full.style.left = "0%";
+        full.style.opacity = "100%";
+
+        if (window.innerWidth < 768) {
+          closeBtn.setAttribute("href", "javascript:void(0)");
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7e3a1b0938.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="linearGradaient">
+        <img src="./image/col/linearGradient.svg" alt="" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-space">
+          <div class="container">
+            <div class="hamburger">
+              <div id="mySidenav" class="sidenav">
+                <div class="close">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+
+                  <select id="cars">
+                    <option value="Az">Az</option>
+                    <option value="Eng">Eng</option>
+                  </select>
+                </div>
+
+                <div class="ham-lists">
+                  <a href="#" class="activation active">
+                    <img src="./image/dashboard-icons/Home.svg" alt="" />
+                    Ana Səhifə
+                  </a>
+                  <a href="./second.html" class="activation">
+                    <img src="./image/dashboard-icons/info.svg" alt="" />
+                    Haqqımızda</a
+                  >
+                  <a href="./activities.html" class="activation">
+                    <img src="./image/dashboard-icons/histogram.svg" alt="" />
+                    Göstəricilər</a
+                  >
+                  <a href="./activities.html" class="activation">
+                    <img src="./image/dashboard-icons/tractor .svg" alt="" />
+                    Fəaliyyətlərimiz</a
+                  >
+                  <a href="./contact.html" class="activation">
+                    <img src="./image/dashboard-icons/map-marker.svg" alt="" />
+                    Əlaqə</a
+                  >
+                </div>
+
+                <div class="sidenav-down ham-lists">
+                  <div class="side-icon-box">
+                    <img src="./image/dashboard-icons/Telephone.svg" alt="" />
+                    <div>
+                      <p>Telefon:</p>
+                      <p>050 511 55 15</p>
+                    </div>
+                  </div>
+
+                  <div class="side-icon-box">
+                    <img src="./image/dashboard-icons/envelope.svg" alt="" />
+                    <div>
+                      <p>Mail:</p>
+                      <p>info@uluargo.az</p>
+                    </div>
+                  </div>
+
+                  <div class="side-line-box">
+                    <p>Site by TimeSoft</p>
+                    <div class="border-long-footer"></div>
+                    <p>© 2020 Uluagro All Rights Reserved.</p>
+                  </div>
+                </div>
+              </div>
+
+              <span
+                style="font-size: 30px; cursor: pointer; color: #fff"
+                class="openbtn"
+                onclick="openNav()"
+                ><img
+                  src="./image/col/openButton.svg"
+                  alt=""
+                  style="width: 35px"
+              /></span>
+            </div>
+          </div>
+          <div class="colorLogo">
+            <img src="./image/color-Frame.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="border-long-footer"></div>
+      </nav>
+
+      <video
+        src="./image/pexels-mikhail-nilov-8333973.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+
+      <div class="title">
+        <img src="./image/Frame.png" alt="" />
+      </div>
+
+      <div class="footer">
+        <div class="footer-main-container">
+          <div class="border-long-footer"></div>
+
+          <div>
+            <div class="footer-main">
+              <div><p>Site by TimeSoft</p></div>
+              <div class="footer-main-icons">
+                <a href="#"><img src="./image/col/facebook.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/Group 181.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/youtube.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/whatsapp.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/twitter 1.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/linkedin 1.svg" alt="" /></a>
+                <div class="border-little-footer"></div>
+                <a href="#"><img src="./image/col/phone.svg" alt="" /></a>
+                <a href="#"><img src="./image/col/email (2) 1.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        const full = document.getElementById("mySidenav");
+        const list = document.querySelector(".ham-lists");
+        const aList = document.querySelector(".aList");
+
+        full.style.width = "250px";
+        full.style.left = "0%";
+        full.style.opacity = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>
