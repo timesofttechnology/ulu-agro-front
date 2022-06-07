@@ -225,7 +225,7 @@ textarea {
   .dropdown-content {
     display: none;
     border-radius: 5%;
-    font-weight: 500; 
+    font-weight: 500;
     position: absolute;
     min-width: 80px;
     overflow: auto;
@@ -241,14 +241,14 @@ textarea {
       display: block;
       &:hover {
         background-color: rgba(221, 221, 221, 0.3);
-        color: #2b2b2b
+        color: #2b2b2b;
       }
     }
   }
 
   .show {
     display: block;
-  }  
+  }
 }
 
 .sidenav {
@@ -549,11 +549,12 @@ img {
       position: relative;
       margin-bottom: 30px;
 
-      // & select {
-      //   width: 100%;
-      //   padding: 5px;
-      //   border: 1px solid #dcdcdc;
-      // }
+      & select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+      }
 
       & label {
         font-weight: 300;
