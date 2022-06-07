@@ -34,10 +34,13 @@
             >&times;</a
           >
 
-          <select id="cars">
-            <option value="Az">Az</option>
-            <option value="Eng">Eng</option>
-          </select>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Az</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#az">Eng</a>
+              <a href="#eng">Az</a>
+            </div>
+          </div>
         </div>
 
         <div class="ham-lists">
@@ -115,7 +118,7 @@
           <div class="colon">
             <div class="colons">
               <h3>256</h3>
-              <p>about</p>
+              <p>Anbar</p>
               <img
                 src="./image/col/colHome.svg"
                 alt=""
@@ -123,13 +126,13 @@
               />
             </div>
             <div class="colons">
-              <h3>256</h3>
-              <p>about</p>
+              <h3>2452</h3>
+              <p>Mal qara</p>
               <img src="./image/col/colCow.svg" alt="" style="width: 65.51px" />
             </div>
             <div class="colons">
-              <h3>256</h3>
-              <p>about</p>
+              <h3>348</h3>
+              <p>Texnika</p>
               <img
                 src="./image/col/colTractor.svg"
                 alt=""
@@ -137,8 +140,8 @@
               />
             </div>
             <div class="colons">
-              <h3>256</h3>
-              <p>about</p>
+              <h3>3446</h3>
+              <p>İstehsal</p>
               <img
                 src="./image/col/colVegetables.svg"
                 alt=""
@@ -166,7 +169,7 @@
             </div>
 
             <div class="sca animate__animated animate__fadeInRight">
-              <div class="dynamic-img ">
+              <div class="dynamic-img">
                 <img
                   src="./image/col/pexels-tim-mossholder-974314.jpg"
                   alt=""
@@ -238,7 +241,6 @@
             </div>
 
             <!--?xml version="1.0" standalone="no"?-->
-           
           </div>
         </div>
 
@@ -271,6 +273,23 @@
       </main>
 
       <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches(".dropbtn")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+              }
+            }
+          }
+        };
+
         function openNav() {
           const full = document.querySelector(".secondSidenav");
           const list = document.querySelector(".ham-lists");
