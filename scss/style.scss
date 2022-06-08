@@ -129,6 +129,8 @@ textarea {
     width: 100%;
     z-index: 1;
     opacity: 0.7;
+
+    & img {width: 100%;}
   }
 }
 
@@ -353,7 +355,7 @@ img {
   height: 100vh;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 0.2fr 1fr;
+  grid-template-columns: 1fr;
 
   & nav {
     padding: 20px 20px 0px;
@@ -435,13 +437,13 @@ img {
   }
 }
 
-.secondSidenav {
-  width: 100%;
+.secondSidenav {  
+  width: 280px;
   height: 100%;
-  position: sticky;
-  z-index: 1;
+  position: absolute;
+  z-index: 1;  
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: var(--uluColor);
   padding: 1px 0px 60px;
   transition: all 0.3s ease-in-out;
@@ -488,6 +490,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
+  padding: 10px;
 }
 
 .double-colon {
@@ -874,13 +877,17 @@ footer div {
     font-size: 13px !important;
   }
 
+  .about > h1 {
+    font-size: 25px;
+  }
+
   .title img {
     width: 150px;
   }
 
   .colons {
     & h3 {
-      font-size: 40px !important;
+      font-size: 30px !important;
     }
   }
 
