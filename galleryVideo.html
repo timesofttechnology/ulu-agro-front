@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/7e3a1b0938.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="soul">
+      <span
+        style="font-size: 30px; cursor: pointer; color: #fff"
+        class="openbtn"
+        onclick="openNav()"
+        ><img src="./image/col/openButton.svg" alt="" style="width: 35px"
+      /></span>
+
+      <div id="mySidenav" class="secondSidenav">
+        <div class="close">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Az</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#az">Eng</a>
+              <a href="#eng">Az</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ham-lists">
+          <a href="./just.html" class="activation active">
+            <img src="./image/dashboard-icons/Home.svg" alt="" />
+            Ana Səhifə
+          </a>
+          <a href="./second.html" class="activation line">
+            <img src="./image/dashboard-icons/info.svg" alt="" />
+            Haqqımızda</a
+          >
+          <a href="./indicators.html" class="activation line">
+            <img src="./image/dashboard-icons/histogram.svg" alt="" />
+            Göstəricilər</a
+          >
+          <a href="./activities.html" class="activation line">
+            <img src="./image/dashboard-icons/tractor .svg" alt="" />
+            Fəaliyyətlərimiz</a
+          >
+          <a href="./galleryImg.html" class="activation line">
+            <img src="./image/dashboard-icons/gallery.svg" alt="" />
+            Qalereya</a
+          >
+          <a href="./contact.html" class="activation line">
+            <img src="./image/dashboard-icons/map-marker.svg" alt="" />
+            Əlaqə</a
+          >
+        </div>
+
+        <div class="sidenav-down ham-lists">
+          <div class="side-icon-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Telefon:</p>
+              <p>050 511 55 15</p>
+            </div>
+          </div>
+
+          <div class="side-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p>Mail:</p>
+              <p>info@uluargo.az</p>
+            </div>
+          </div>
+
+          <div class="side-line-box">
+            <p>Site by TimeSoft</p>
+            <div class="border-long-footer"></div>
+            <p>© 2020 Uluagro All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-main">
+        <nav>
+          <div class="left-container">
+            <a href="/just.html"
+              ><img src="./image/color-Frame.svg" alt=""
+            /></a>
+          </div>
+        </nav>
+
+        <div class="container-grid height" id="container">
+          <div class="about">
+            <h1>Qalereya</h1>
+            <div class="down-border">
+              <div></div>
+            </div>
+          </div>
+          <div class="greenBoxes">
+            <button type="button" class="greenBox">
+              <a href="./galleryImg.html">Şəkillər</a>
+            </button>
+
+            <button type="button" class="greenBox greenActive">
+              <a href="./galleryVideo.html">Video</a>
+            </button>
+          </div>
+
+          <!-- <div class="gallery">
+            <div class="container1">
+              <img
+                src="./image/pexels-pixabay-247763.jpg"
+                style="max-width: 100%; cursor: pointer"
+                onclick="onClick(this)"
+                class="modal-hover-opacity"
+              />
+            </div>
+
+            <div id="modal01" class="modal" onclick="this.style.display='none'">
+              <img src="./image/close-circle.svg" alt="" class="close" />
+              <div class="modal-content">
+                <img id="img01" style="max-width: 100%" />
+              </div>
+            </div>
+          </div> -->
+
+          <div class="video-container">
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+            <div class="video">
+              <video src="./image/agro.mp4" muted autoplay loop></video>
+              <img src="./image/play.svg" alt="" class="play" />
+            </div>
+          </div>
+
+          <div class="popup-video" onclick="this.style.display='none'">
+            <img src="./image/close-circle.svg" alt="" class="close" />
+            <video src="./image/agro.mp4" autoplay loop muted controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".video-container img").forEach((vid) => {
+        vid.onclick = () => {
+          document.querySelector(".popup-video").style.display = "block";
+          document.querySelector(".popup-video .play").src =
+            vid.getAttribute("src");
+        };
+      });
+      
+      function openNav() {
+        const full = document.querySelector(".secondSidenav");
+        const list = document.querySelector(".ham-lists");
+        const closeBtn = document.querySelector(".closebtn");
+
+        full.style.width = "280px";
+        full.style.left = "0%";
+        full.style.opacity = "100%";
+
+        if (window.innerWidth < 768) {
+          closeBtn.setAttribute("href", "javascript:void(0)");
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = "-100%";
+      }
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
