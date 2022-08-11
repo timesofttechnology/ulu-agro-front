@@ -88,9 +88,10 @@ textarea {
 }
 
 .openbtn {
-  position: absolute;
-  top: 17px;
+  position: fixed;
+  top: 30px;
   left: 30px;
+  z-index: 2;
 }
 
 #mySidenav {
@@ -197,20 +198,6 @@ textarea {
   align-items: center;
   justify-content: flex-start;
 
-  // & select {
-
-  //   & option {
-  //     cursor: pointer;
-  //     color: var(--uluColor);
-  //     background-color: #fff;
-  //     transition: all 0.25s ease-in-out;
-  //     &:hover {
-  //       color: #fff;
-  //       background-color: var(--uluColor);
-  //     }
-  //   }
-  // }
-
   & .dropbtn {
     background: none;
     border: 3px solid #fff;
@@ -260,7 +247,7 @@ textarea {
   width: 16%;
   opacity: 0%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: -20%;
   background-color: var(--uluColor);
@@ -295,6 +282,34 @@ textarea {
       color: var(--uluColor);
       border-radius: 30px;
     }
+  }
+}
+
+.navBar {
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  & img {
+    width: 159px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  & img {
+    width: 120px;
   }
 }
 
@@ -358,6 +373,9 @@ img {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
+  opacity: 1;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
 
   & nav {
     padding: 20px 20px 0px;
@@ -369,19 +387,19 @@ img {
   }
 
   .second-main {
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
-    &::-webkit-scrollbar {
-      width: 10px;
-    }
+    // &::-webkit-scrollbar {
+    //   width: 10px;
+    // }
 
-    &::-webkit-scrollbar-track {
-      background-color: rgb(255, 255, 255);
-    }
+    // &::-webkit-scrollbar-track {
+    //   background-color: #ffffff;
+    // }
 
-    &::-webkit-scrollbar-thumb {
-      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
+    // &::-webkit-scrollbar-thumb {
+    //   box-shadow: inset 0 0 6px #0000004d;
+    // }
 
     &.about {
       text-align: center;
@@ -438,12 +456,30 @@ img {
     }
   }
 }
+// .darkFilter {
+//   position: relative;
+
+//   &::after {
+//     content: "";
+//     object-fit: cover;
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 5;
+//     opacity: .5;
+//     display: block;
+//     background-color: rgb(17, 17, 17);
+//   }
+
+// }
 
 .secondSidenav {
   width: 280px;
   height: 100%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: -100%;
   background-color: var(--uluColor);
@@ -486,6 +522,11 @@ img {
   max-width: 1140px;
   margin: auto;
   padding: 10px;
+}
+
+.headerText {
+  color: #449856;
+  margin-top: 120px;
 }
 
 .colon {
@@ -634,6 +675,7 @@ img {
 
 .sca {
   & .dynamic-img {
+    display: none !important;
     // margin: auto;
     margin-top: 50px;
     width: 100% !important;
@@ -641,6 +683,7 @@ img {
     overflow: hidden;
     opacity: 100%;
     transform: scale(1.1);
+
     transition: all 0.3s ease-in-out;
     -webkit-mask-image: url(../image/about1.svg);
     mask-image: url(../image/about1.svg);
@@ -660,6 +703,7 @@ img {
 .sca1 {
   & .dynamic-img {
     // margin: auto;
+    display: none !important;
     margin-top: 50px;
     width: 100% !important;
     height: 100%;
@@ -883,15 +927,19 @@ footer div {
 }
 
 @media (max-width: 768px) {
+  .logo .logo_slider ul {
+    display: block;
+  }
+
   .sca .dynamic-img {
     margin-left: 100px;
   }
   .sca1 .dynamic-img {
     margin-left: 100px;
   }
-  .soul .second-main {
-    overflow-x: hidden;
-  }
+  // .soul .second-main {
+  //   overflow-x: hidden;
+  // }
   .footer {
     & .footer-main {
       padding: 20px 0px;
@@ -911,8 +959,8 @@ footer div {
   }
 
   .secondSidenav {
-    position: absolute;
-    opacity: 0%;
+    position: fixed;
+    // opacity: 0%;
     width: 40%;
     left: -100%;
   }
