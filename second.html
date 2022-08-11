@@ -42,11 +42,11 @@
         </div>
 
         <div class="ham-lists">
-          <a href="./just.html" class="activation line">
+          <a href="./just.html" class="activation ">
             <img src="./image/dashboard-icons/Home.svg" alt="" />
             Ana Səhifə
           </a>
-          <a href="./second.html" class="activation active">
+          <a href="./second.html" class="activation line active">
             <img src="./image/dashboard-icons/info.svg" alt="" />
             Haqqımızda</a
           >
@@ -57,6 +57,10 @@
           <a href="./activities.html" class="activation line">
             <img src="./image/dashboard-icons/tractor .svg" alt="" />
             Fəaliyyətlərimiz</a
+          >
+          <a href="./galleryImg.html" class="activation line">
+            <img src="./image/dashboard-icons/gallery.svg" alt="" />
+            Qalereya</a
           >
           <a href="./contact.html" class="activation line">
             <img src="./image/dashboard-icons/map-marker.svg" alt="" />
@@ -90,17 +94,17 @@
       </div>
 
       <main class="second-main">
-        <nav>
+        <nav class="navBar">
           <div class="left-container">
-            <a href="./just.html">
-              <img src="./image/color-Frame.svg" alt="" />
-            </a>
+            <a href="/just.html"
+              ><img src="./image/color-Frame.svg" alt=""
+            /></a>
           </div>
         </nav>
 
         <div class="container-grid" id="container">
           <div class="about">
-            <h1 style="color: #449856">Haqqımızda</h1>
+            <h1 class="headerText">Haqqımızda</h1>
             <div class="down-border">
               <div></div>
             </div>
@@ -152,29 +156,41 @@
 
           <div class="double-colon">
             <div class="animate__animated animate__fadeInLeft">
-              <h2 style="color: #2b2b22; font-size: 34px">Following</h2>
-              <p>
-                Following its dynamic development since its establishment, a
-                wide range of fruits, vegetables and cereals with high quality
-                and productivity are grown in the Park. Adding value to the
-                products and supporting small and medium-sized businesses in the
-                region are among the company's core principles.
-                <br /><br />
-                Our quality and healthy products in accordance with
-                international standards allow us to strengthen in foreign
-                markets, and one of our goals is to promote the brand of ‘’Made
-                in Azerbaijan’’ around the world. At the same time, our company
-                participates in social responsibility programs.
-              </p>
+              <div>
+                <h2 style="color: #2b2b22; font-size: 34px">Following</h2>
+                <p>
+                  Following its dynamic development since its establishment, a
+                  wide range of fruits, vegetables and cereals with high quality
+                  and productivity are grown in the Park. Adding value to the
+                  products and supporting small and medium-sized businesses in
+                  the region are among the company's core principles.
+                  <br /><br />
+                  Our quality and healthy products in accordance with
+                  international standards allow us to strengthen in foreign
+                  markets, and one of our goals is to promote the brand of
+                  ‘’Made in Azerbaijan’’ around the world. At the same time, our
+                  company participates in social responsibility programs.
+                </p>
+              </div>
+              <div>
+                <button class="download">
+                  <a href="" download>
+                    <div>
+                      <img src="./image/pdf.svg" alt="" />
+                    </div>
+                    <span>Təqdimatı yüklə</span>
+                    <div>
+                      <img src="./image/download.svg" alt="" />
+                    </div>
+                  </a>
+                </button>
+              </div>
             </div>
 
             <div class="sca animate__animated animate__fadeInRight">
-              <div class="dynamic-img">
-                <img
-                  src="./image/col/pexels-tim-mossholder-974314.jpg"
-                  alt=""
-                />
-              </div>
+              <!-- <div class="dynamic-img">
+                <img src="./image/pexels-pixabay-247763.jpg" alt="" />
+              </div> -->
             </div>
           </div>
         </div>
@@ -195,7 +211,9 @@
               </div>
             </div>
 
-            <img src="./image/col/factory.svg" alt="" />
+            <div class="about-layer">
+              <img src="./image/pexels-pixabay-247599.jpg" alt="" />
+            </div>
           </div>
 
           <div
@@ -203,13 +221,10 @@
             class="double-colon example"
             style="padding: 15px 30px"
           >
-            <div class="sca">
-              <div class="dynamic-img">
-                <img
-                  src="./image/col/pexels-tim-mossholder-974314.jpg"
-                  alt=""
-                />
-              </div>
+            <div class="sca1">
+              <!-- <div class="dynamic-img">
+                <img src="./image/pexels-pixabay-247599.jpg" alt="" />
+              </div> -->
             </div>
 
             <div class="text-box">
@@ -273,6 +288,13 @@
       </main>
 
       <script>
+        const navBar = document.querySelector(".navBar");
+        window.addEventListener("scroll", () => {
+          navBar.classList.toggle("fixed", window.scrollY > 100);
+        });
+
+       
+
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -294,12 +316,12 @@
           const full = document.querySelector(".secondSidenav");
           const list = document.querySelector(".ham-lists");
           const closeBtn = document.querySelector(".closebtn");
-          const soul = document.querySelector(".soul")
+          const soul = document.querySelector(".soul");
 
           full.style.width = "280px";
           full.style.left = "0%";
-          full.style.opacity = "100%";
-          soul.classList.toggle("darkFilter");
+          // full.style.opacity = "100%";
+          // soul.classList.toggle("darkFilter");
 
           if (window.innerWidth < 768) {
             closeBtn.setAttribute("href", "javascript:void(0)");
@@ -308,7 +330,7 @@
 
         function closeNav() {
           document.getElementById("mySidenav").style.left = "-100%";
-          const soul = document.querySelector(".soul")
+          const soul = document.querySelector(".soul");
           soul.classList.remove("darkFilter");
         }
       </script>
