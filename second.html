@@ -30,9 +30,7 @@
 
       <div id="mySidenav" class="secondSidenav">
         <div class="close">
-          <a href="#" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
 
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Az</button>
@@ -296,10 +294,12 @@
           const full = document.querySelector(".secondSidenav");
           const list = document.querySelector(".ham-lists");
           const closeBtn = document.querySelector(".closebtn");
+          const soul = document.querySelector(".soul")
 
           full.style.width = "280px";
           full.style.left = "0%";
           full.style.opacity = "100%";
+          soul.classList.toggle("darkFilter");
 
           if (window.innerWidth < 768) {
             closeBtn.setAttribute("href", "javascript:void(0)");
@@ -308,6 +308,8 @@
 
         function closeNav() {
           document.getElementById("mySidenav").style.left = "-100%";
+          const soul = document.querySelector(".soul")
+          soul.classList.remove("darkFilter");
         }
       </script>
     </div>

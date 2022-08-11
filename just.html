@@ -159,16 +159,21 @@
     <script>
       function openNav() {
         const full = document.getElementById("mySidenav");
+        const main = document.querySelector(".main")
         const list = document.querySelector(".ham-lists");
         const aList = document.querySelector(".aList");
 
         full.style.width = "280px";
         full.style.left = "0%";
         full.style.opacity = "100%";
+        main.classList.toggle("darkFilter");
       }
 
       function closeNav() {
+        const main = document.querySelector(".main")
         document.getElementById("mySidenav").style.left = "-100%";
+        main.classList.remove("darkFilter");
+
       }
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
