@@ -89,7 +89,7 @@
       </div>
 
       <div class="second-main">
-        <nav>
+        <nav class="navBar">
           <div class="left-container">
             <a href="./just.html">
               <img src="./image/color-Frame.svg" alt="" />
@@ -99,7 +99,7 @@
 
         <div class="container-grid" id="container">
           <div class="about">
-            <h1>Fəaliyyətlərimiz</h1>
+            <h1 class="headerText">Fəaliyyətlərimiz</h1>
             <div class="down-border">
               <div></div>
             </div>
@@ -179,6 +179,10 @@
     </div>
 
     <script>
+      const navBar = document.querySelector(".navBar");
+        window.addEventListener("scroll", () => {
+          navBar.classList.toggle("fixed", window.scrollY > 100);
+        });
       function openNav() {
         const full = document.querySelector(".secondSidenav");
         const list = document.querySelector(".ham-lists");
