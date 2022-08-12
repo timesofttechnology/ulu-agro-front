@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/7e3a1b0938.js"
       crossorigin="anonymous"
@@ -86,7 +93,7 @@
       </div>
 
       <div class="second-main">
-        <nav>
+        <nav class="navBar">
           <div class="left-container">
             <a href="./just.html">
               <img src="./image/color-Frame.svg" alt="" />
@@ -96,7 +103,7 @@
 
         <div class="container-grid" id="container">
           <div class="about">
-            <h1>Fəaliyyətlərimiz</h1>
+            <h1 class="headerText">Fəaliyyətlərimiz</h1>
             <div class="down-border">
               <div></div>
             </div>
@@ -165,6 +172,11 @@
     </div>
 
     <script>
+      const navBar = document.querySelector(".navBar");
+        window.addEventListener("scroll", () => {
+          navBar.classList.toggle("fixed", window.scrollY > 100);
+        });
+        
       function openNav() {
         const full = document.querySelector(".secondSidenav");
         const list = document.querySelector(".ham-lists");
