@@ -199,14 +199,15 @@ textarea {
 .close {
   display: flex;
   align-items: center;
-  justify-content: flex-start
+  justify-content: flex-start;
+  margin: 20px 0px 10px 20px;
 }
 
 .close .dropbtn {
   background: none;
   border: 3px solid #fff;
   color: #fff;
-  padding: 5px 10px;
+  padding: 7px 10px;
   font-size: 16px;
   border-radius: 50%;
   cursor: pointer
@@ -274,7 +275,7 @@ textarea {
 }
 
 .sidenav .closebtn {
-  margin: 20px;
+  margin-right: 10px;
   padding: 0px 16px;
   font-size: 34px;
   color: #fff;
@@ -468,8 +469,12 @@ img {
   z-index: -1
 }
 
+.double-colon-h {
+    color: #2b2b2b !important;
+}
+
 .secondSidenav .closebtn {
-  margin: 20px;
+  margin-right: 10px;
   padding: 0px 16px;
   font-size: 34px;
   color: #fff;
@@ -912,6 +917,10 @@ img {
   color: #fff
 }
 
+.about-layer {
+    height: 450px;
+}
+
 .container-grid .about-layer {
   width: 100%;
   height: 30em
@@ -1036,6 +1045,64 @@ footer div img {
 }
 
 @media (max-width: 768px) {
+
+    .close .dropbtn {
+        padding: 5px 8px;
+    }
+
+    iframe {
+        width: 100%;
+    } 
+
+
+    .footer .footer-main {
+        justify-content: space-between !important;
+    }
+
+
+    .close {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .head-img .cloudBox .cloudBox-container div h3 {
+        font-size: 30px;
+    }
+
+    .cloudBox {
+        width: 50%;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    .double-colon h2 {
+        font-size: 30px;
+    }
+
+    .second-main p,
+    .container-grid .greenBoxes .greenBox a
+    {
+        font-size: 13px ;
+    }
+
+    .sidenav-down {
+        padding-bottom: 0px !important;
+      }
+    
+      .ham-lists a {
+        font-size: 14px;
+      }
+    
+      .side-icon-box img {
+        width: 19px;
+      }
+    
+      .navbar .navbar-space {
+        grid-template-columns: 0.75fr 1fr;
+      }
+    
+
   .logo .logo_slider ul {
     display: block
   }
@@ -1055,7 +1122,7 @@ footer div img {
 
   .footer .footer-main .footer-main-icons {
     position: static !important;
-    gap: 3px !important
+    gap: 10px !important
   }
 
   .colons h3 {
@@ -1103,114 +1170,162 @@ footer div img {
   top: 130px
 }
 
+}
+
 @media (max-width: 576px) {
-  .about-layer {
-    height: 12em
-  }
 
-  .sca .dynamic-img {
-    margin-top: 0 !important;
-    width: 100% !important;
-    height: 100%;
-    overflow: hidden;
-    opacity: 100%;
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
-    -webkit-mask-image: url(../image/about1.svg);
-    mask-image: url(../image/about1.svg);
-    -webkit-mask-size: 334px;
-    mask-size: 100%;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat
-  }
+    .about h1 {
+        font-size: 30px;
+    }
 
-  .sca1 .dynamic-img {
-    margin-top: 0 !important;
-    width: 100% !important;
-    height: 100%;
-    overflow: hidden;
-    opacity: 100%;
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
-    -webkit-mask-image: url(../image/about1.svg);
-    mask-image: url(../image/about1.svg);
-    -webkit-mask-size: 334px;
-    mask-size: 100%;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat
-  }
+    .navBar img {
+        width: 130px;
+      }
+    
+      .fixed img {
+        width: 100px;
+      }
+    
+      .sidenav-down {
+        padding-bottom: 10px !important;
+      }
+    
+      .sidenav .ham-lists a {
+          font-size: 13px !important;
+        }
 
-  p {
-    font-size: 13px !important
-  }
+        .side-icon-box img {
+          width: 19px !important;
+        }
+        .about-layer {
+          height: 12em
+        }
+      
+        .sca .dynamic-img {
+          margin-top: 0 !important;
+          width: 100% !important;
+          height: 100%;
+          overflow: hidden;
+          opacity: 100%;
+          transform: scale(0.9);
+          transition: all 0.3s ease-in-out;
+          -webkit-mask-image: url(../image/about1.svg);
+          mask-image: url(../image/about1.svg);
+          -webkit-mask-size: 334px;
+          mask-size: 100%;
+          mask-repeat: no-repeat;
+          -webkit-mask-repeat: no-repeat
+        }
+      
+        .sca1 .dynamic-img {
+          margin-top: 0 !important;
+          width: 100% !important;
+          height: 100%;
+          overflow: hidden;
+          opacity: 100%;
+          transform: scale(0.9);
+          transition: all 0.3s ease-in-out;
+          -webkit-mask-image: url(../image/about1.svg);
+          mask-image: url(../image/about1.svg);
+          -webkit-mask-size: 334px;
+          mask-size: 100%;
+          mask-repeat: no-repeat;
+          -webkit-mask-repeat: no-repeat
+        }
+      
+        
+      
+        .title img {
+          width: 150px
+        }
+      
+        .colons h3 {
+          font-size: 25px !important
+        }
+      
+        .navbar-space {
+          grid-template-columns: 0.56fr 1fr !important
+        }
+      
+        .soul {
+          grid-template-columns: 1fr
+        }
+      
+        .soul .ham-lists a {
+          font-size: 13px
+        }
+      
+        .soul .cloudBox {
+          width: 60%
+        }
+      
+        .soul .cloudBox .cloudBox-container div {
+          padding: 6px 26px
+        }
+      
+        .soul .cloudBox .cloudBox-container div h3 {
+          font-size: 17px
+        }
+      
+        .soul .double-colon {
+          grid-template-columns: 1fr
+        }
+      
+        .soul .double-colon form {
+          grid-template-columns: 1fr
+        }
+      
+        .soul .double-colon button {
+          width: 100%;
+          justify-content: center
+        }
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 5px;
+        }
+        .video-container {
+          justify-content: center;
+        }
+        .popup-video .close {
+          top: 150px;
+          right: 30px;
+        }
+        .popup-video video {
+          width: 100%;
+          height: 260px;
+      }
+      }
 
-  .about h1 {
-    font-size: 25px !important
-  }
 
-  .title img {
-    width: 150px
-  }
 
-  .colons h3 {
-    font-size: 25px !important
-  }
-
-  .navbar-space {
-    grid-template-columns: 0.56fr 1fr !important
-  }
-
-  .soul {
-    grid-template-columns: 1fr
-  }
-
-  .soul .ham-lists a {
-    font-size: 13px
-  }
-
-  .soul .cloudBox {
-    width: 60%
-  }
-
-  .soul .cloudBox .cloudBox-container div {
-    padding: 6px 26px
-  }
-
-  .soul .cloudBox .cloudBox-container div h3 {
-    font-size: 17px
-  }
-
-  .soul .double-colon {
-    grid-template-columns: 1fr
-  }
-
-  .soul .double-colon form {
-    grid-template-columns: 1fr
-  }
-
-  .soul .double-colon button {
-    width: 100%;
-    justify-content: center
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-  }
-  .video-container {
-    justify-content: center;
-  }
-  .popup-video .close {
-    top: 150px;
-    right: 30px;
-  }
-  .popup-video video {
-    width: 100%;
-    height: 260px;
+@media (max-width: 426px) {
+    .soul .cloudBox {
+        width: 65% ;
+      }
+    
+      .container-grid .greenBoxes .greenBox a {
+        font-size: 13px;
+      }
+      .double-colon h2 {
+        font-size: 25px ;
+      }
+    
+      .head-img .cloudBox {
+        left: 70px;
+    }
 }
-}
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+
+    .soul .cloudBox {
+        width: 72% ;
+      }
+    
+      .head-img .cloudBox {
+        left: 70px;
+      }
+
   .modal .close {
     right: 20px;
     top: 20px;
